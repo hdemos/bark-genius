@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Header from "./components/header/Header";
 import Horizontal from "@/app/components/cards/Horizontal";
 import Link from "next/link";
+import {UserButton} from '@clerk/nextjs'
 
 const myList = ["test1", ]
 
@@ -11,7 +12,7 @@ export default function Home() {
         <Header/>
 
         <Horizontal/>
-          <h1><Link href="/ListPage">Click Here for Recipe Card</Link></h1>
+          <h1><Link href="/pages/ListPage">Click Here for Recipe Card</Link></h1>
       </div>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //   <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
